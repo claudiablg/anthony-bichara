@@ -1,11 +1,19 @@
-import react from 'react';
-import { Button } from '../components/button/button';
-import { Variant } from '../common/components.props';
+import React, { FC } from 'react';
 
-export const Home = () => {
+type Props = {
 
+}
+
+export const Home: FC<Props> = ({ 
+
+    ...props
+}) => {
     return(
-       <Button variant={Variant.primary}>label</Button>
+        <>
+            <div {...props}>
+                {/* <Button variant={Variant.primary}>label</Button> */}
+            </div>  
+        </> 
     )
 }
 
